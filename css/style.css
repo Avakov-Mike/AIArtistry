@@ -415,4 +415,173 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 10px;
+}
+
+.generate {
+  margin-top: 150px;
+  background: url("../img/generate/bg_image.jpg");
+  background-position: 0 0;
+  background-size: 48vw 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+.generate-bg {
+  background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  width: 930px;
+  object-fit: cover;
+  z-index: -1;
+}
+.generate-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.generate-content_left-items {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 550px;
+  left: 205px;
+}
+.generate-content_left-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  padding: 30px 35px;
+  border-radius: 20px;
+  background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  color: #fff;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  margin-right: 30px;
+}
+.generate-content_left-item_title {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.generate-content_left-item_subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.generate-content_left-item:last-child {
+  background: #170033;
+}
+.generate-content_right {
+  flex-basis: 45%;
+}
+.generate-content_right-subtitle {
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  display: block;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 22.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+.generate-content_right-title {
+  color: #170033;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 62px;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+}
+.generate-content_right-title_gradient {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 22.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+.generate-content_right-text {
+  display: block;
+  color: #170033;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.generate-content_right-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.generate-content_right-form::before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  opacity: 0.1;
+  background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.generate-content_right-input {
+  position: relative;
+  padding: 17px 20px;
+  border-radius: 28px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--170033, #170033);
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.generate-content_right-button {
+  width: 42%;
+  color: #fff;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  cursor: pointer;
+}
+.generate-content_right-button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+.generate-content_right-surprise {
+  display: flex;
+  align-items: center;
+}
+.generate-content_right-surprise_text {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 10px;
+}
+.generate-content_right-surprise img {
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=style.css.map */
