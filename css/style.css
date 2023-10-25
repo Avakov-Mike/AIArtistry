@@ -934,7 +934,7 @@ input {
 .answers-content_bottom-items {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
 }
 .answers-content_bottom-item {
