@@ -9,7 +9,7 @@
             opacity: 0.1
             background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%))
             width: 100%
-            height: 100%
+            height: 56%
             top: 0
             bottom: 0
             left: 0
@@ -21,6 +21,7 @@
             display: flex
             justify-content: space-between
             align-items: center
+            margin-bottom: 50px
             &-left
                 &_subtitle
                     display: block
@@ -75,5 +76,105 @@
                         margin-right: 0
         &_bottom
             &-slide
-                &
-                &_item
+                &_top
+                    &-items
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-bottom: 30px
+                    &-item
+                        width: 430px
+                        height: 530px
+                        position: relative
+                        &_one
+                            background: url(../img/graphics/item_one.jpg)
+                            background-repeat: no-repeat
+                            background-size: cover
+                            background-position: 0 0
+                            border-radius: 30px
+                        &_two
+                            background: url(../img/graphics/item_two.jpg)
+                            background-repeat: no-repeat
+                            background-size: cover
+                            background-position: 0 0
+                            border-radius: 30px
+                        &_three
+                            background: url(../img/graphics/item_three.jpg)
+                            background-repeat: no-repeat
+                            background-size: cover
+                            background-position: 0 0
+                            border-radius: 30px
+                        &_bg
+                            position: relative
+                            width: 100%
+                            height: 100%
+                            &::after
+                                content: ''
+                                width: 100%
+                                height: 100%
+                                top: 0
+                                bottom: 0
+                                left: 0
+                                right: 0
+                                background: linear-gradient(180deg, rgba(23, 0, 51, 0.00) 45.12%, #170033 85.82%)
+                                opacity: 0.8
+                                position: absolute
+                                border-radius: 30px
+                        &_title
+                            position: absolute
+                            font-family: 'fontspring-demo-integral-cf-bold', sans-serif
+                            top: 450px
+                            left: 30px
+                            color: $white
+                            font-size: 32px
+                            font-style: normal
+                            font-weight: 900
+                            line-height: 42px
+                &_bottom
+                    &-items
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                    &-item
+                        height: 530px
+                        position: relative
+                        &_small
+                            width: 575px
+                            background: url(../img/graphics/item_four.jpg)
+                            background-repeat: no-repeat
+                            background-size: cover
+                            background-position: 0 -135px
+                            border-radius: 30px
+                        &_big
+                            width: 745px
+                            background: url(../img/graphics/item_five.jpg)
+                            background-repeat: no-repeat
+                            background-size: cover
+                            background-position: 0 0
+                            border-radius: 30px
+                        &_bg
+                            position: relative
+                            width: 100%
+                            height: 100%
+                            &::after
+                                content: ''
+                                width: 100%
+                                height: 100%
+                                top: 0
+                                bottom: 0
+                                left: 0
+                                right: 0
+                                background: linear-gradient(180deg, rgba(23, 0, 51, 0.00) 45.12%, #170033 85.82%)
+                                opacity: 0.8
+                                position: absolute
+                                border-radius: 30px
+                        &_title
+                            position: absolute
+                            font-family: 'fontspring-demo-integral-cf-bold', sans-serif
+                            top: 450px
+                            left: 30px
+                            color: $white
+                            font-size: 32px
+                            font-style: normal
+                            font-weight: 900
+                            line-height: 42px
