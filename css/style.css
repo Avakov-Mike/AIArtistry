@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -761,9 +762,13 @@ input {
   transform: translateY(50%);
   margin-right: 15px;
   cursor: pointer;
+  transition: 0.5s;
 }
 .graphics-content_top-right_button:last-child {
   margin-right: 0;
+}
+.graphics-content_top-right_button:hover {
+  background-color: #BC4BDF;
 }
 .graphics-content_bottom-slide_top-items {
   display: flex;
@@ -879,4 +884,113 @@ input {
   font-style: normal;
   font-weight: 900;
   line-height: 42px;
+}
+
+.answers {
+  padding-top: 150px;
+}
+.answers-content_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.answers-content_top-subtitle {
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.answers-content_top-title {
+  display: inline-block;
+  color: #170033;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 62px;
+  margin-bottom: 15px;
+}
+.answers-content_top-title_gradient {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.answers-content_top-text {
+  color: #170033;
+  width: 55%;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.answers-content_bottom-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.answers-content_bottom-item {
+  width: 660px;
+  padding: 25px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.answers-content_bottom-item::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  opacity: 0.1;
+  background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.answers-content_bottom-item_title {
+  color: #170033;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.answers-content_bottom-item_line {
+  height: 0.5px;
+  background: #170033;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.answers-content_bottom-item_text {
+  color: #170033;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  cursor: pointer;
+  list-style: none;
+}
+details summary::after {
+  content: "˅";
+}
+
+details[open] summary::after {
+  content: "˄";
 }/*# sourceMappingURL=style.css.map */

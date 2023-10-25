@@ -16,7 +16,6 @@
             right: 0
             z-index: -2
     &-content
-        // padding-top: 150px
         &_top
             display: flex
             justify-content: space-between
@@ -72,8 +71,11 @@
                     transform: translateY(50%)
                     margin-right: 15px
                     cursor: pointer
+                    transition: 0.5s
                     &:last-child
                         margin-right: 0
+                    &:hover
+                        background-color: $pink
         &_bottom
             &-slide
                 &_top
