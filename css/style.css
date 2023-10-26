@@ -1097,6 +1097,7 @@ details[open] summary::after {
   margin-right: 0;
 }
 .price-content_right-item_recom {
+  display: inline-block;
   position: absolute;
   color: #fff;
   font-family: "fontspring-demo-integral-cf-bold", sans-serif;
@@ -1106,10 +1107,10 @@ details[open] summary::after {
   line-height: normal;
   top: 0;
   right: 0;
-  transform: rotate(45deg) translateX(30px) translateY(25px);
+  border-radius: 0 30px 0 30px;
   z-index: 2;
-  padding: 3px 0;
   background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%));
+  padding: 5px 20px;
 }
 .price-content_right-item_title {
   color: #170033;
@@ -1277,11 +1278,10 @@ details[open] summary::after {
   -webkit-text-fill-color: transparent;
 }
 .testimonials-content_slide-right_rating-stars {
-  height: 20px;
+  font-size: 20px;
   margin-bottom: 50px;
-}
-.testimonials-content_slide-right_rating-stars img {
-  height: 100%;
+  color: #FFBC00;
+  cursor: pointer;
 }
 .testimonials-content_slide-right_buttons {
   display: flex;

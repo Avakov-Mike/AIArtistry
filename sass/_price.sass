@@ -86,6 +86,7 @@
                 &:last-child
                     margin-right: 0
                 &_recom
+                    display: inline-block
                     position: absolute
                     color: $white
                     font-family: 'fontspring-demo-integral-cf-bold', sans-serif
@@ -95,11 +96,11 @@
                     line-height: normal
                     top: 0
                     right: 0
-                    transform: rotate(45deg) translateX(30px) translateY(25px)
+                    border-radius: 0 30px 0 30px
+                    // transform: rotate(45deg) translateX(30px) translateY(25px)
                     z-index: 2
-                    padding: 3px 0
                     background: var(--Linear, linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%))
-                    // clip-path: polygon(40% 0, 60% 0, 100% 40%, 100% 60%)
+                    padding: 5px 20px
                 &_title
                     color: $title
                     font-family: 'fontspring-demo-integral-cf-bold', sans-serif
