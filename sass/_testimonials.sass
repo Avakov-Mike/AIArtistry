@@ -1,0 +1,102 @@
+.testimonials
+    &-content
+        padding: 150px 0
+        &_slide
+            position: relative
+            padding: 50px
+            display: flex
+            justify-content: space-between
+            align-items: start
+            &-bg
+                position: absolute
+                top: 0px
+                left: 0px
+                border-radius: 30px
+                width: 150px
+                height: 730px
+                border: 10px solid var(--Linear, $purple)
+                z-index: -1
+            &-avatar
+                width: 640px
+                height: 730px
+                margin-right: 50px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    border-radius: 30px
+            &-right
+                width: 600px
+                padding: 50px 0
+                &_subtitle
+                    background-image: linear-gradient(90deg, $purple 0%, $pink 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    font-family: 'fontspring-demo-integral-cf-bold', sans-serif
+                    font-size: 22px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                &_title
+                    color: $title
+                    font-family: 'fontspring-demo-integral-cf-bold', sans-serif
+                    font-size: 42px
+                    font-style: normal
+                    font-weight: 900
+                    line-height: 62px
+                    &-gradient
+                        background-image: linear-gradient(90deg, $purple 0%, $pink 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        margin-bottom: 45px
+                &_item
+                    margin-bottom: 30px
+                &_text
+                    color: $title
+                    font-family: Poppins
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    margin-bottom: 30px
+                &_rating
+                    &-titles
+                        margin-bottom: 12px
+                    &-title
+                        display: inline-block
+                        color: $title
+                        font-family: 'fontspring-demo-integral-cf-bold', sans-serif
+                        font-size: 28px
+                        font-style: normal
+                        font-weight: 900
+                        line-height: normal
+                        &_gradient
+                            background-image: linear-gradient(90deg, $purple 0%, $pink 100%)
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+                    &-stars
+                        height: 20px
+                        margin-bottom: 50px
+                        img
+                            height: 100%
+                &_buttons
+                    display: flex
+                    align-items: center
+                &_button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: $white
+                    font-size: 24px
+                    font-weight: 600
+                    min-width: 50px
+                    min-height: 50px
+                    border-radius: 10px
+                    margin-right: 15px
+                    cursor: pointer
+                    transition: 0.5s
+                    background-color: $purple
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        background-color: $pink

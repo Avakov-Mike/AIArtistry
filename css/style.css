@@ -759,7 +759,6 @@ input {
   min-height: 50px;
   background-color: #8A35F2;
   border-radius: 10px;
-  transform: translateY(50%);
   margin-right: 15px;
   cursor: pointer;
   transition: 0.5s;
@@ -1021,7 +1020,7 @@ details[open] summary::after {
   margin-right: 60px;
 }
 .price-content_left-subtitle {
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -1033,7 +1032,7 @@ details[open] summary::after {
 }
 .price-content_left-title {
   color: #170033;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 52px;
   font-style: normal;
   font-weight: 900;
@@ -1064,7 +1063,7 @@ details[open] summary::after {
 }
 .price-content_left-item_title {
   color: #170033;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
@@ -1101,7 +1100,7 @@ details[open] summary::after {
 .price-content_right-item_recom {
   position: absolute;
   color: #fff;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1115,7 +1114,7 @@ details[open] summary::after {
 }
 .price-content_right-item_title {
   color: #170033;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -1123,7 +1122,7 @@ details[open] summary::after {
 }
 .price-content_right-item_price {
   display: block;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -1183,9 +1182,130 @@ details[open] summary::after {
   padding: 15px;
   cursor: pointer;
   color: #fff;
-  font-family: "fontspring-demo-integral-cf-bold", sans-seri;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+.testimonials-content {
+  padding: 150px 0;
+}
+.testimonials-content_slide {
+  position: relative;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.testimonials-content_slide-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 30px;
+  width: 150px;
+  height: 730px;
+  border: 10px solid var(--Linear, #8A35F2);
+  z-index: -1;
+}
+.testimonials-content_slide-avatar {
+  width: 640px;
+  height: 730px;
+  margin-right: 50px;
+}
+.testimonials-content_slide-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.testimonials-content_slide-right {
+  width: 600px;
+  padding: 50px 0;
+}
+.testimonials-content_slide-right_subtitle {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.testimonials-content_slide-right_title {
+  color: #170033;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 62px;
+}
+.testimonials-content_slide-right_title-gradient {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 45px;
+}
+.testimonials-content_slide-right_item {
+  margin-bottom: 30px;
+}
+.testimonials-content_slide-right_text {
+  color: #170033;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.testimonials-content_slide-right_rating-titles {
+  margin-bottom: 12px;
+}
+.testimonials-content_slide-right_rating-title {
+  display: inline-block;
+  color: #170033;
+  font-family: "fontspring-demo-integral-cf-bold", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.testimonials-content_slide-right_rating-title_gradient {
+  background-image: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonials-content_slide-right_rating-stars {
+  height: 20px;
+  margin-bottom: 50px;
+}
+.testimonials-content_slide-right_rating-stars img {
+  height: 100%;
+}
+.testimonials-content_slide-right_buttons {
+  display: flex;
+  align-items: center;
+}
+.testimonials-content_slide-right_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #8A35F2;
+}
+.testimonials-content_slide-right_button:last-child {
+  margin-right: 0;
+}
+.testimonials-content_slide-right_button:hover {
+  background-color: #BC4BDF;
 }/*# sourceMappingURL=style.css.map */
